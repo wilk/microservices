@@ -1,0 +1,16 @@
+{
+  "name": "@microservices/products",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "grpc": "^1.19.0",
+    "grpc-caller": "^0.11.0"
+  }
+}

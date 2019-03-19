@@ -1,0 +1,17 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.13.1"
+  },
+  "dependencies": {
+    "@microservices/api": "file:packages/api",
+    "@microservices/auth": "file:packages/auth",
+    "@microservices/common": "file:packages/common",
+    "@microservices/orders": "file:packages/orders",
+    "@microservices/products": "file:packages/products"
+  }
+}

@@ -1,0 +1,103 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-deployment
+  labels:
+    app: api
+    tier: api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api
+      tier: api
+  template:
+    metadata:
+      labels:
+        app: api
+        tier: api
+    spec:
+      containers:
+        - name: api
+          image: wilky/api:latest
+          ports:
+            - containerPort: 80
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auth-deployment
+  labels:
+    app: auth
+    tier: micro
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: auth
+      tier: micro
+  template:
+    metadata:
+      labels:
+        app: auth
+        tier: micro
+    spec:
+      containers:
+        - name: auth
+          image: wilky/auth:latest
+          ports:
+            - containerPort: 80
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orders-deployment
+  labels:
+    app: orders
+    tier: micro
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: orders
+      tier: micro
+  template:
+    metadata:
+      labels:
+        app: orders
+        tier: micro
+    spec:
+      containers:
+        - name: orders
+          image: wilky/orders:latest
+          ports:
+            - containerPort: 80
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: products-deployment
+  labels:
+    app: products
+    tier: micro
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: products
+      tier: micro
+  template:
+    metadata:
+      labels:
+        app: products
+        tier: micro
+    spec:
+      containers:
+        - name: products
+          image: wilky/products:latest
+          ports:
+            - containerPort: 80

@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package prototype;
+
+service Auth {
+  rpc authenticate(CredentialsInput) returns (CredentialsOutput) {}
+}
+service Order {
+  rpc makeOrder(Empty) returns (OrderOutput) {}
+}
+service Product {
+  rpc getProductList(Empty) returns (ProductList) {}
+}
+
+message Empty {
+
+}
+
+message CredentialsInput {
+  required string username = 1;
+  required string password = 2;
+}
+
+message CredentialsOutput {
+  bool authenticated = 1;
+}
+
+message OrderOutput {
+  bool ordered = 1;
+}
+
+message ProductList {
+  repeated ProductType products = 1;
+}
+
+message ProductType {
+  int32 id = 1;
+  string name = 2;
+}
