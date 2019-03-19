@@ -1,6 +1,6 @@
 ;(async () => {
   const caller = require("grpc-caller")
-  const PROTO_PATH = "../common/schema.proto"
+  const PROTO_PATH = "common/schema.proto"
   const Auth = caller("auth-service:80", PROTO_PATH, "Auth")
   const Order = caller("orders-service:80", PROTO_PATH, "Order")
   const Product = caller("products-service:80", PROTO_PATH, "Product")

@@ -25,5 +25,4 @@ const authenticate = (call, callback) => {
 server.addService(proto.prototype.Auth.service, { authenticate })
 
 server.bind(SERVER_ADDRESS, grpc.ServerCredentials.createInsecure())
-
 server.start()
