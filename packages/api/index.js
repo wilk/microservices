@@ -1,9 +1,8 @@
 ;(async () => {
-  const caller = require("grpc-caller")
-  const PROTO_PATH = "common/schema.proto"
-  const Auth = caller("auth-service:80", PROTO_PATH, "Auth")
-  const Order = caller("orders-service:80", PROTO_PATH, "Order")
-  const Product = caller("products-service:80", PROTO_PATH, "Product")
+  const { clientFactory } = require("@wilk/common")
+  const Auth = clientFactory("auth-service:80", "Auth")
+  const Order = clientFactory("orders-service:80", "Order")
+  const Product = clientFactory("products-service:80", "Product")
   const { ApolloServer, gql } = require("apollo-server")
 
   // Type definitions define the "shape" of your data and specify

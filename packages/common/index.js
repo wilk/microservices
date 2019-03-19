@@ -14,8 +14,8 @@ const schema = grpc.loadPackageDefinition(
   })
 )
 
-const clientFactory = host =>
-  caller(host, path.resolve(__dirname, "./schema.proto"))
+const clientFactory = (host, sub) =>
+  caller(host, path.resolve(__dirname, "./schema.proto"), sub)
 
 module.exports = {
   clientFactory,
