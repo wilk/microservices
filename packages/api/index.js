@@ -1,5 +1,5 @@
 ;(async () => {
-  const { clientFactory } = require("@wilk/common")
+  const { clientFactory } = require("wilk-common")
   const Auth = clientFactory("auth-service:80", "Auth")
   const Order = clientFactory("orders-service:80", "Order")
   const Product = clientFactory("products-service:80", "Product")

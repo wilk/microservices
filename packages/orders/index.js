@@ -1,5 +1,5 @@
 ;(async () => {
-  const { schema, clientFactory } = require("@wilk/common")
+  const { schema, clientFactory } = require("wilk-common")
   const Product = clientFactory("products-service:80", "Product")
   const grpc = require("grpc")
   const server = new grpc.Server()

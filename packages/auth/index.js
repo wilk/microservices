@@ -1,4 +1,4 @@
-const { schema } = require("@wilk/common")
+const { schema } = require("wilk-common")
 const grpc = require("grpc")
 const server = new grpc.Server()
 const SERVER_ADDRESS = "0.0.0.0:80"

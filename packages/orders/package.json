@@ -1,5 +1,5 @@
 {
-  "name": "@wilk/orders",
+  "name": "wilk-orders",
   "version": "0.0.9",
   "description": "",
   "main": "index.js",
@@ -10,9 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@wilk/common": "^0.0.9",
     "grpc": "^1.19.0",
-    "grpc-caller": "^0.11.0"
+    "grpc-caller": "^0.11.0",
+    "wilk-common": "file:../common"
   },
-  "gitHead": "c5aee45fec0df45df64bec15f8702650d39e0429"
+  "gitHead": "5a744f1200a04580c0036d81583493c15c8457e4"
 }

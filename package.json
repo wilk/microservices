@@ -8,10 +8,10 @@
     "lerna": "^3.13.1"
   },
   "dependencies": {
-    "@wilk/api": "file:packages/api",
-    "@wilk/auth": "file:packages/auth",
-    "@wilk/common": "file:packages/common",
-    "@wilk/orders": "file:packages/orders",
-    "@wilk/products": "file:packages/products"
+    "wilk-api": "file:packages/api",
+    "wilk-auth": "file:packages/auth",
+    "wilk-common": "file:packages/common",
+    "wilk-orders": "file:packages/orders",
+    "wilk-products": "file:packages/products"
   }
 }
