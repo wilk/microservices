@@ -3,5 +3,9 @@
   "version": "0.0.3",
   "main": "index.js",
   "license": "MIT",
-  "gitHead": "5411ef2187169adbbabfc7f57b313f9b27273773"
+  "gitHead": "0fef447432afc99f4f1f1dc9891403176e40e999",
+  "dependencies": {
+    "grpc": "^1.19.0",
+    "grpc-caller": "^0.11.0"
+  }
 }
