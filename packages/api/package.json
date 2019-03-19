@@ -10,9 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@wilk/common": "^0.0.2",
     "apollo-server": "^2.4.8",
     "graphql": "^14.1.1",
     "grpc": "^1.19.0",
     "grpc-caller": "^0.11.0"
-  }
+  },
+  "gitHead": "5411ef2187169adbbabfc7f57b313f9b27273773"
 }
