@@ -14,5 +14,5 @@
     "grpc": "^1.19.0",
     "grpc-caller": "^0.11.0"
   },
-  "gitHead": "7d32b4c8de0d2168d5d1b915d0973b1b7a83ff18"
+  "gitHead": "e3a536cc2b17c718320362b891a8501d053c79f5"
 }
