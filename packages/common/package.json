@@ -3,7 +3,7 @@
   "version": "0.0.7",
   "main": "index.js",
   "license": "MIT",
-  "gitHead": "55ed6b46952db95011b8cbf4a8eb515130127f62",
+  "gitHead": "a34109f4ac81a4b679855992fc0366560d64e3c6",
   "dependencies": {
     "grpc": "^1.19.0",
     "grpc-caller": "^0.11.0"

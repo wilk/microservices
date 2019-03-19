@@ -3,11 +3,9 @@ const grpc = require("grpc")
 const protoLoader = require("@grpc/proto-loader")
 const path = require("path")
 
-console.log(path.resolve(__filename, "./schema.proto"))
-
 // Load protobuf
 const schema = grpc.loadPackageDefinition(
-  protoLoader.loadSync("./schema.proto", {
+  protoLoader.loadSync(path.resolve(__dirname, "./schema.proto"), {
     keepCase: true,
     longs: String,
     enums: String,
@@ -17,7 +15,7 @@ const schema = grpc.loadPackageDefinition(
 )
 
 const clientFactory = host =>
-  caller(host, path.resolve(__filename, "./schema.proto"))
+  caller(host, path.resolve(__dirname, "./schema.proto"))
 
 module.exports = {
   clientFactory,
