@@ -1,5 +1,5 @@
 {
-  "name": "@microservices/common",
+  "name": "@wilk/common",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT"

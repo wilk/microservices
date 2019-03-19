@@ -1,5 +1,5 @@
 {
-  "name": "@microservices/orders",
+  "name": "@wilk/orders",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
