@@ -1,6 +1,6 @@
 {
   "name": "wilk-orders",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   "dependencies": {
     "grpc": "^1.19.0",
     "grpc-caller": "^0.11.0",
-    "wilk-common": "^0.0.10"
+    "wilk-common": "^0.0.11"
   },
   "gitHead": "5a744f1200a04580c0036d81583493c15c8457e4"
 }

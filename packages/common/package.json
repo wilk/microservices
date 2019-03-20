@@ -1,6 +1,6 @@
 {
   "name": "wilk-common",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "main": "index.js",
   "license": "MIT",
   "gitHead": "5a744f1200a04580c0036d81583493c15c8457e4",
